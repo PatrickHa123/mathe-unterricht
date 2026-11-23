@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grundwerte berechnen · Prozentrechnung · Mathematik Jg. 7</title>
+<meta name="description" content="Digitale Unterrichtsreihe Prozentrechnung, Mathematik Jahrgang 7, Kaiserin-Augusta-Schule Köln">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="crumbs"><a href="../../">Mathematik</a> › <a href="../">Jahrgang 7</a> › <a href="./">Prozentrechnung</a></div>
+  <h1>Grundwerte berechnen</h1>
+  <p>Was war vorher – was ist das Ganze? · Buch S. 94–98</p>
+  <span class="ds">Doppelstunde 4 · 90 Minuten</span>
+</header>
+<main>
+<nav class="reihe" aria-label="Stunden der Reihe"><a href="index.html">Start</a><a href="1-check-in.html">1 Check-in</a><a href="2-prozentsatz.html">2 Prozentsatz</a><a href="3-prozentwert.html">3 Prozentwert</a><a href="4-grundwert.html" aria-current="page">4 Grundwert</a><a href="5-ueberall-prozente.html">5 Überall Prozente</a><a href="6-zinsen.html">6 Zinsen</a><a href="7-zinseszinsen.html">7 Zinseszinsen</a><a href="8-wiederholung.html">8 Wiederholung</a><a href="9-selbsttest.html">9 Selbsttest</a><a href="taschenrechner.html">🧮 Taschenrechner</a><a href="glossar.html">📖 Glossar</a></nav>
+<section class="box">
+  <h2><span class="ico">🎯</span>Ziele und Ablauf</h2>
+  <p><b>Heute lernst du</b>, den Grundwert zu berechnen: Was war der Preis vor dem Rabatt? Wie viel kostet etwas ohne Mehrwertsteuer?</p>
+  <ol class="ablauf">
+    <li><span class="min">10′</span> Einstieg: Zwei Rechnungen, ein Fahrrad – wer hat recht?</li>
+    <li><span class="min">20′</span> Erarbeitung: Grundwert mit Dreisatz und Formel (Buch S. 94–95)</li>
+    <li><span class="min">10′</span> Taschenrechner Station 4: Probe mit der Umkehrrechnung</li>
+    <li><span class="min">35′</span> Übungsphase nach Wahl (Buch S. 96–98) mit Kassenbon-Detektiven</li>
+    <li><span class="min">15′</span> Fehler finden und Check-out</li>
+  </ol>
+</section>
+
+<section class="box">
+  <p class="phase">Einstieg · Denkfalle</p>
+  <h2><span class="ico">🚲</span>Zwei Rechnungen, ein Fahrrad</h2>
+  <figure>
+    <svg viewBox="0 0 600 140" role="img" aria-label="Preisschild: Fahrrad, um 25 Prozent reduziert, jetzt nur 600 Euro.">
+      <rect x="150" y="10" width="300" height="120" rx="16" fill="#ffd600" stroke="#1f2233" stroke-width="3"/>
+      <circle cx="175" cy="35" r="8" fill="#fff" stroke="#1f2233" stroke-width="2"/>
+      <text x="300" y="48" font-size="22" text-anchor="middle" font-weight="700" fill="#1f2233">Fahrrad – 25 % reduziert!</text>
+      <text x="300" y="108" font-size="46" text-anchor="middle" font-weight="800" fill="#c62828">jetzt 600 €</text>
+    </svg>
+  </figure>
+  <p><b>Ayla</b> rechnet: „25 % von 600 € sind 150 €. Vorher hat es 600 € + 150 € = 750 € gekostet.“<br>
+     <b>Jonas</b> rechnet: „600 € sind 75 % vom alten Preis. Vorher hat es 800 € gekostet.“</p>
+  <ol>
+    <li>Wer hat recht? Mach die <b>Probe</b>: Reduziere beide Ergebnisse um 25 %. Kommt 600 € heraus?</li>
+    <li>Erkläre den Fehler mit dem Wort <b>Grundwert</b>.</li>
+  </ol>
+  <details class="loesung"><summary>Lösung</summary><div>Probe Ayla: 25 % von 750 € = 187,50 € → 562,50 €. Passt nicht! Probe Jonas: 25 % von 800 € = 200 € → 600 € ✓. Die 25 % beziehen sich auf den <b>alten</b> Preis – das ist der <span class="G">Grundwert</span>. Ayla hat aber 25 % vom <b>neuen</b> Preis berechnet. Den alten Preis kennt man noch nicht: Er ist gesucht!</div></details>
+</section>
+
+<section class="box">
+  <p class="phase">Erarbeitung</p>
+  <h2><span class="ico">📐</span>Grundwerte berechnen</h2>
+  <div class="buch">Lies S. 94: In einer Schule kommen 200 Schülerinnen und Schüler mit dem Fahrrad. Das sind 40 %. Wie viele sind es insgesamt?</div>
+  <div class="schritte">
+    <div class="schritt"><b>1. Schritt:</b> Was ist bekannt? <span class="W">40 % ≙ 200 Schüler</span>. Gesucht: <span class="G">100 % ≙ ?</span></div>
+    <div class="schritt"><b>2. Schritt:</b> Auf 1 % (: 40): 1 % ≙ 5 Schüler</div>
+    <div class="schritt"><b>3. Schritt:</b> Auf 100 % (· 100): <span class="G">100 % ≙ 500 Schüler</span></div>
+    <div class="schritt">
+      <table class="dreisatz"><tr><td class="op"></td><td>40 %</td><td>200 Schüler</td><td class="op"></td></tr>
+      <tr><td class="op">: 40 ↓</td><td>1 %</td><td>5 Schüler</td><td class="op">↓ : 40</td></tr>
+      <tr><td class="op">· 100 ↓</td><td><b>100 %</b></td><td><b>500 Schüler</b></td><td class="op">↓ · 100</td></tr></table>
+      <b>Formel:</b> Aus W = p · G folgt 200 = 0,4 · G. Die Umkehrung von „· 0,4“ ist „: 0,4“: G = 200 : 0,4 = 500.</div>
+  </div>
+  <figure>
+    <svg viewBox="0 0 520 130" role="img" aria-label="Pfeilbild: Vom Grundwert G mit mal 0,4 zum Prozentwert W gleich 200. Zurück mit geteilt durch 0,4.">
+      <circle cx="90" cy="65" r="46" fill="#e8f5e9" stroke="#2e7d32" stroke-width="3"/><text x="90" y="62" font-size="22" text-anchor="middle" fill="#2e7d32" font-weight="700">G = ?</text><text x="90" y="85" font-size="13" text-anchor="middle" fill="#2e7d32">Grundwert</text>
+      <circle cx="430" cy="65" r="46" fill="#fff3e0" stroke="#e65100" stroke-width="3"/><text x="430" y="62" font-size="22" text-anchor="middle" fill="#e65100" font-weight="700">W = 200</text><text x="430" y="85" font-size="13" text-anchor="middle" fill="#e65100">Prozentwert</text>
+      <path d="M140 45 Q260 0 380 45" fill="none" stroke="#1565c0" stroke-width="3" marker-end="url(#ah)"/><text x="260" y="22" font-size="17" text-anchor="middle" fill="#1565c0" font-weight="700">· 0,4</text>
+      <path d="M380 88 Q260 133 140 88" fill="none" stroke="#c62828" stroke-width="3" marker-end="url(#ah2)"/><text x="260" y="125" font-size="17" text-anchor="middle" fill="#c62828" font-weight="700">: 0,4</text>
+      <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1565c0"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#c62828"/></marker></defs>
+    </svg>
+    <figcaption>Erinnerung (Buch S. 94, Rand): Die Umkehrung von „mal“ ist „geteilt durch“.</figcaption>
+  </figure>
+  <div class="heft"><b>Merkkasten: Grundwerte berechnen</b><br>
+    Wenn der Prozentsatz und der zugehörige Prozentwert bekannt sind, kann man den Grundwert mit einem <b>Dreisatz</b> berechnen oder den <b>Prozentwert durch den Prozentsatz dividieren</b>:<br>
+    <b>Grundwert = Prozentwert : Prozentsatz</b> &nbsp; kurz: <b>G = W : p</b><br>
+    Beispiel: p = 80 %, W = 160: G = 160 : 0,8 = 200.</div>
+  <h3>Grundwert vor einer Preisänderung</h3>
+  <div class="buch">S. 95 oben und Beispiel 1 (Schreibtisch) und Beispiel 2 (Fernseher mit Mehrwertsteuer).</div>
+  <div class="scroll"><table>
+    <tr><th>Situation</th><th>Der neue Preis ist …</th><th>Alter Preis (G)</th></tr>
+    <tr><td>T-Shirt um 20 % reduziert, kostet jetzt 16 €</td><td>80 % des alten Preises</td><td>16 € : 0,8 = 20 €</td></tr>
+    <tr><td>Auto um 20 % teurer, kostet jetzt 18 000 €</td><td>120 % des alten Preises</td><td>18 000 € : 1,2 = 15 000 €</td></tr>
+    <tr><td>Fernseher 249,90 € inkl. 19 % MwSt.</td><td>119 % des Nettopreises</td><td>249,90 € : 1,19 = 210 €</td></tr>
+  </table></div>
+  <div class="heft"><b>Merkkasten: Alter Preis aus neuem Preis</b><br>
+    Nach Senkung um 20 %: alter Preis = neuer Preis <b>: 0,8</b>. Nach Erhöhung um 20 %: alter Preis = neuer Preis <b>: 1,2</b>.<br>
+    <b>Nettopreis</b> (ohne MwSt.) = Bruttopreis <b>: 1,19</b> (bzw. : 1,07).</div>
+  <p><a class="btn" href="taschenrechner.html#station4">🧮 Zur Taschenrechner-Station 4 ▶</a></p>
+</section>
+
+<section class="box">
+  <p class="phase">Übungsphase · nach Wahl</p>
+  <h2><span class="ico">🏋️</span>Üben</h2>
+  <div class="aufgabe zuordnung" data-loesung="URLAUB"><div class="kopf"><b>Buch S. 96, Nr. 1</b><span class="niveau n1">Basis</span></div>
+    <p>Gelbe Kärtchen den passenden Grundwerten zuordnen. Die Buchstaben ergeben in der Reihenfolge 1–6 ein Lösungswort.</p>
+  </div>
+  <div class="aufgabe"><div class="kopf"><b>Buch S. 96, Nr. 2</b><span class="niveau n1">Basis</span></div>
+    <p>Dreisatz-Tabellen ergänzen und Pfeile beschriften.</p>
+    <details><summary>Hilfe</summary><div>Lerntipp S. 95, Beispiel 1. Bei b) ist die Zwischengröße 10 % (: 3), dann · 10. Bei d) sind es 225 % – das ist mehr als 100 %, also ist der Grundwert <b>kleiner</b> als 90 m².</div></details>
+  </div>
+  <div class="aufgabe"><div class="kopf"><b>Buch S. 96, Nr. 4</b><span class="niveau n2">Standard</span></div>
+    <p>Grundwert mit Dreisatz <b>und</b> Formel – welcher Weg ist leichter?</p>
+    <details><summary>Hilfe</summary><div>Lerntipp S. 95, Beispiel 2. Beide Wege müssen dasselbe Ergebnis liefern – das ist gleich deine Probe.</div></details>
+  </div>
+  <div class="aufgabe"><div class="kopf"><b>Buch S. 96, Nr. 5</b><span class="niveau n2">Standard</span></div>
+    <p>Preis vor der Preisreduzierung berechnen.</p>
+    <details><summary>Hilfe 1</summary><div>Um 25 % gesenkt → der jetzige Preis sind 75 % → alter Preis = jetziger Preis : 0,75.</div></details>
+    <details><summary>Hilfe 2</summary><div>Probe mit dem Rechner: Ergebnis × 0,75 muss wieder den jetzigen Preis ergeben.</div></details>
+  </div>
+  <div class="aufgabe"><div class="kopf"><b>Buch S. 97, Nr. 8</b><span class="niveau n2">Standard</span></div>
+    <p>Welche Skizze passt? Begründen, berechnen, eigene Skizzen zeichnen.</p>
+    <details><summary>Hilfe</summary><div>„Um 75 % reduziert“ → übrig bleiben 25 %. In welcher Skizze stehen die 600 € bei 25 %?</div></details>
+  </div>
+  <div class="aufgabe"><div class="kopf"><b>Buch S. 97, Nr. 12 – Kassenbon-Detektive</b><span class="niveau n3">Experte</span></div>
+    <p>Einen Kassenbon untersuchen: Welche Produkte haben 7 %, welche 19 % Mehrwertsteuer? Nettopreise berechnen.</p>
+    <div class="koop"><b>Zu Nr. 12 d) in Dreiergruppen:</b> Untersucht mitgebrachte Kassenbons. Jede Person übernimmt eine Rolle: <b>Vorleser/in</b> (liest Posten und Buchstaben vor), <b>Rechner/in</b> (Nettopreise), <b>Prüfer/in</b> (Überschlag und Probe).</div>
+    <details><summary>Hilfe</summary><div>Am Ende des Bons steht, welcher Buchstabe (A, B, C …) zu welchem Steuersatz gehört. Nettopreis = Bruttopreis : 1,07 bzw. : 1,19.</div></details>
+  </div>
+  <div class="aufgabe"><div class="kopf"><b>Online-Training</b><span class="niveau n2">Standard</span></div>
+    <p>a) 3 % des Grundwerts sind 3 kg. G = <span class="check" data-a="100" data-label="Grundwert a" data-unit="kg"></span></p>
+    <p>b) Eine Uhr wurde um 20 % reduziert und kostet noch 56 €. Vorher: <span class="check" data-a="70" data-label="Preis vorher Uhr" data-unit="€"></span></p>
+    <p>c) Ein Comic wurde um 75 % gesenkt, kostet 9 €. Vorher: <span class="check" data-a="36" data-label="Preis vorher Comic" data-unit="€"></span></p>
+    <p>d) Gebäckmischung 2,99 € inkl. 7 % MwSt. Netto: <span class="check" data-a="2,79" data-tol="0.006" data-label="Nettopreis Gebäck" data-unit="€"></span></p>
+  </div>
+</section>
+
+<section class="box">
+  <p class="phase">Reflexion · Fehler als Lernchance</p>
+  <h2><span class="ico">🕵️</span>Finde den Fehler!</h2>
+  <div class="buch">S. 98, Nr. 14: Zwei fehlerhafte Lösungen – erkläre mit Fachbegriffen und verbessere.</div>
+  <details><summary>Hilfe</summary><div>a) Wenn um 40 % reduziert wurde – wie viel Prozent sind die 50 € dann? b) Erinnere dich an den Fernseher: Worauf beziehen sich die 19 %?</div></details>
+  <div class="ki">Ein KI-Chatbot antwortet auf „Ein Pullover kostet nach 30 % Rabatt 35 €. Was hat er vorher gekostet?“ mit: „35 € + 30 % = 45,50 €“. Prüfe die Antwort mit einer Probe und erkläre den Fehler.
+    <details class="loesung"><summary>Lösung</summary><div>Probe: 30 % von 45,50 € = 13,65 € → 31,85 €, nicht 35 €. Richtig: 35 € sind 70 % → 35 € : 0,7 = 50 €. Probe: 50 € · 0,7 = 35 € ✓. Die KI hat denselben Fehler gemacht wie Ayla.</div></details></div>
+</section>
+
+<section class="box">
+  <p class="phase">Check-out</p>
+  <h2><span class="ico">🚪</span>Check-out</h2>
+  <p>1. 35 % entsprechen 140 €. Grundwert: <span class="check" data-a="400" data-label="Grundwert Check-out" data-unit="€"></span></p>
+  <p>2. Ein Rad kostet 595 € inkl. 19 % MwSt. Netto: <span class="check" data-a="500" data-label="Nettopreis Rad" data-unit="€"></span></p>
+  <p>3. Notiere im Heft: Woran erkenne ich in einer Aufgabe, dass der <b>Grundwert gesucht</b> ist?</p>
+</section>
+
+<nav class="reihe" aria-label="Weiter"><a href="3-prozentwert.html">◀ 3 Prozentwert</a><a href="5-ueberall-prozente.html">5 Überall Prozente ▶</a></nav>
+</main>
+<footer class="bottom">Unterrichtsreihe Prozentrechnung · Mathematik Jg. 7 · Kaiserin-Augusta-Schule Köln<br>
+Buchverweise: Lambacher Schweizer Mathematik 7 (Klett), Kapitel III „Prozentrechnung – Zinsrechnung“ ·
+<a href="../../impressum.html">Impressum</a> · <a href="../../datenschutz.html">Datenschutz</a></footer>
+</body>
+</html>

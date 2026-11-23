@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zinseszinsen · Prozentrechnung · Mathematik Jg. 7</title>
+<meta name="description" content="Digitale Unterrichtsreihe Prozentrechnung, Mathematik Jahrgang 7, Kaiserin-Augusta-Schule Köln">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="crumbs"><a href="../../">Mathematik</a> › <a href="../">Jahrgang 7</a> › <a href="./">Prozentrechnung</a></div>
+  <h1>Zinseszinsen</h1>
+  <p>Zinsen auf Zinsen · Buch S. 108–111</p>
+  <span class="ds">Doppelstunde 7 · 90 Minuten</span>
+</header>
+<main>
+<nav class="reihe" aria-label="Stunden der Reihe"><a href="index.html">Start</a><a href="1-check-in.html">1 Check-in</a><a href="2-prozentsatz.html">2 Prozentsatz</a><a href="3-prozentwert.html">3 Prozentwert</a><a href="4-grundwert.html">4 Grundwert</a><a href="5-ueberall-prozente.html">5 Überall Prozente</a><a href="6-zinsen.html">6 Zinsen</a><a href="7-zinseszinsen.html" aria-current="page">7 Zinseszinsen</a><a href="8-wiederholung.html">8 Wiederholung</a><a href="9-selbsttest.html">9 Selbsttest</a><a href="taschenrechner.html">🧮 Taschenrechner</a><a href="glossar.html">📖 Glossar</a></nav>
+<section class="box">
+  <h2><span class="ico">🎯</span>Ziele und Ablauf</h2>
+  <p><b>Heute lernst du</b>, wie ein Guthaben über mehrere Jahre wächst, wenn die Zinsen auf dem Konto bleiben – und wie du das mit dem Wachstumsfaktor und Potenzen schnell berechnest.</p>
+  <ol class="ablauf">
+    <li><span class="min">10′</span> Einstieg: Zwei Angebote – gleich gut?</li>
+    <li><span class="min">25′</span> Erarbeitung: Zinseszinsen und Wachstumsfaktor (Buch S. 108–109)</li>
+    <li><span class="min">10′</span> Taschenrechner Station 6: Potenzen</li>
+    <li><span class="min">30′</span> Übungsphase nach Wahl (Buch S. 110–111)</li>
+    <li><span class="min">15′</span> Erforschen: Wann verdoppelt sich mein Geld? + Check-out</li>
+  </ol>
+</section>
+
+<section class="box">
+  <p class="phase">Einstieg · Hypothesen bilden</p>
+  <h2><span class="ico">🤔</span>Zwei Angebote – gleich gut?</h2>
+  <p>Jens möchte 1000 € für drei Jahre anlegen. Er hat zwei Angebote (vgl. Buch S. 108, Bild oben):</p>
+  <div class="karten"><div class="karte"><b>Bank A:</b> jedes Jahr 4 % Zinsen</div><div class="karte blau"><b>Bank B (Treuezins):</b> 1. Jahr 3 %, 2. Jahr 4 %, 3. Jahr 5 %</div></div>
+  <p>Jens sagt: „Das ist doch gleich – im Durchschnitt sind es bei beiden 4 %.“</p>
+  <ol>
+    <li><b>Vermute</b> zuerst: Hat Jens recht? Schreib deine Vermutung ins Heft.</li>
+    <li><b>Prüfe:</b> Berechne den Kontostand für beide Angebote Jahr für Jahr. Die Zinsen bleiben jeweils auf dem Konto.</li>
+  </ol>
+  <details><summary>Hilfe</summary><div>Bank A, 1. Jahr: 1000 € · 1,04 = 1040 €. 2. Jahr: 1040 € · 1,04 = … Bank B, 1. Jahr: 1000 € · 1,03 = 1030 €. 2. Jahr: 1030 € · 1,04 = …</div></details>
+  <details class="loesung"><summary>Lösung</summary><div>Bank A: 1040 € → 1081,60 € → <b>1124,86 €</b>. Bank B: 1030 € → 1071,20 € → <b>1124,76 €</b>. Fast gleich – aber Bank A bringt 10 Cent mehr! Grund: Bei Bank A gibt es schon früh mehr Zinsen, und auf diese Zinsen gibt es im nächsten Jahr wieder Zinsen.</div></details>
+</section>
+
+<section class="box">
+  <p class="phase">Erarbeitung</p>
+  <h2><span class="ico">📐</span>Zinsen auf Zinsen</h2>
+  <div class="buch">Lies S. 108: Ein Guthaben von 600 € bei 2 % Zinsen – Jahr für Jahr.</div>
+  <div class="schritte">
+    <div class="schritt"><b>Jahr 1:</b> Zinsen 2 % von 600 € = 12 €. Guthaben: 600 € + 12 € = 612 € – oder kurz: <b>1,02 · 600 € = 612 €</b></div>
+    <div class="schritt"><b>Jahr 2:</b> Zinsen 2 % von <b>612 €</b> = 12,24 € (mehr als im ersten Jahr!). Guthaben: 1,02 · 612 € = 624,24 €</div>
+    <div class="schritt"><b>Zusammengefasst:</b> 1,02 · 1,02 · 600 € = <b>1,02² · 600 €</b></div>
+    <div class="schritt"><b>Nach t Jahren:</b> K = 1,02<sup>t</sup> · 600 €. Der Faktor 1,02 heißt <b>Wachstumsfaktor</b> (oder Zinsfaktor).</div>
+  </div>
+  <h3>Animation: Mit und ohne Zinseszins</h3>
+  <p>Verändere Startkapital, Zinssatz und Laufzeit. Achte darauf, wie der Abstand zwischen den Säulen mit der Zeit wächst.</p>
+  <div class="zz-widget" data-k="1000" data-p="4" data-t="20"></div>
+  <div class="heft"><b>Merkkasten: Zinseszinsen</b><br>
+    Wenn die Zinsen am Jahresende zum Guthaben hinzukommen, werden sie im nächsten Jahr mitverzinst. Diese Zinsen nennt man <b>Zinseszinsen</b>.<br>
+    Liegt ein Guthaben G für t Jahre zu einem Zinssatz p auf der Bank, gilt für den Kontostand K:<br>
+    <b>K = (1 + p)<sup>t</sup> · G</b> &nbsp; Der Faktor 1 + p heißt <b>Wachstumsfaktor</b>.<br>
+    Beispiel: 500 € für 5 Jahre zu 1,5 %: K = 1,015<sup>5</sup> · 500 € ≈ 538,64 €.</div>
+  <div class="aufgabe"><div class="kopf"><b>Wachstumsfaktoren</b><span class="niveau n1">Basis</span></div>
+    <p>a) Zinssatz 3 % → Wachstumsfaktor <span class="check" data-a="1,03" data-tol="0.0001" data-label="Faktor 3 Prozent"></span></p>
+    <p>b) Zinssatz 0,5 % → Wachstumsfaktor <span class="check" data-a="1,005" data-tol="0.00001" data-label="Faktor 0,5 Prozent"></span></p>
+    <p>c) Wachstumsfaktor 1,025 → Zinssatz <span class="check" data-a="2,5" data-tol="0.001" data-label="Zinssatz aus Faktor" data-unit="%"></span></p>
+    <details><summary>Hilfe</summary><div>100 % + 0,5 % = 100,5 % = 1,005. Häufiger Fehler: 1,5 statt 1,005!</div></details>
+  </div>
+  <p><a class="btn" href="taschenrechner.html#station6">🧮 Zur Taschenrechner-Station 6 ▶</a></p>
+</section>
+
+<section class="box">
+  <p class="phase">Übungsphase · nach Wahl</p>
+  <h2><span class="ico">🏋️</span>Üben</h2>
+  <div class="aufgabe"><div class="kopf"><b>Buch S. 110, Nr. 1</b><span class="niveau n1">Basis</span></div>
+    <p>Zinssatz, Wachstumsfaktor, Formel und Kontostand passend zuordnen.</p>
+    <details><summary>Hilfe</summary><div>Erst Zinssatz und Faktor zuordnen (4 % → 1,04). Dann überschlagen: Welcher Kontostand ist der größte? Der gehört zum größten Zinssatz.</div></details>
+  </div>
+  <div class="aufgabe"><div class="kopf"><b>Buch S. 110, Nr. 2</b><span class="niveau n2">Standard</span></div>
+    <p>5000 € für 10 Jahre bei verschiedenen Zinssätzen.</p>
+    <details><summary>Hilfe</summary><div>Lerntipp S. 109, Beispiel 1 a). Mit dem Rechner: 1,005 <kbd>x<sup>■</sup></kbd> 10 <kbd>▶</kbd> × 5000 =</div></details>
+  </div>
+  <div class="aufgabe"><div class="kopf"><b>Buch S. 110, Nr. 4 a) und b)</b><span class="niveau n2">Standard</span></div>
+    <p>Ein Kontoauszug mit wechselnden Zinssätzen lesen und erklären.</p>
+    <details><summary>Hilfe</summary><div>In jeder Zeile: Zinsen = Guthaben zu Jahresbeginn · Zinssatz. Guthaben am Jahresende = Guthaben zu Jahresbeginn + Zinsen. Das Guthaben am Jahresende wird zum Guthaben im nächsten Jahr.</div></details>
+  </div>
+  <div class="aufgabe"><div class="kopf"><b>Buch S. 110, Nr. 4 c) – mit dem Taschenrechner</b><span class="niveau n3">Experte</span></div>
+    <p>Rechne die Tabelle bis 2025 weiter (2020–2021: 0,1 %, 2022–2025: 0,4 %). Statt einer Tabellenkalkulation nutzt du <kbd>Ans</kbd> und <kbd>=</kbd>. Guthaben Ende 2025 (auf Cent): <span class="check" data-a="5245,11" data-tol="0.03" data-label="Guthaben 2025" data-unit="€"></span></p>
+    <details><summary>Hilfe</summary><div>Start: 5151,71 € (Ende 2019). <kbd>×</kbd> 1,001 <kbd>=</kbd> <kbd>=</kbd>, dann <kbd>×</kbd> 1,004 <kbd>=</kbd> <kbd>=</kbd> <kbd>=</kbd> <kbd>=</kbd>. Kleine Abweichungen im Cent-Bereich entstehen durch Runden.</div></details>
+  </div>
+  <div class="aufgabe"><div class="kopf"><b>Online-Training</b><span class="niveau n2">Standard</span></div>
+    <p>a) 5000 € zu 1,5 % für 10 Jahre: <span class="check" data-a="5802,70" data-tol="0.011" data-label="Kontostand 10 Jahre 1,5 Prozent" data-unit="€"></span></p>
+    <p>b) 100 € zu 1,9 % für 12 Jahre (Buch S. 109, Beispiel 1): <span class="check" data-a="125,34" data-tol="0.011" data-label="Kontostand Emma" data-unit="€"></span></p>
+  </div>
+</section>
+
+<section class="box">
+  <p class="phase">Erforschen</p>
+  <h2><span class="ico">🔬</span>Wann verdoppelt sich mein Geld?</h2>
+  <div class="buch">S. 109, Beispiel 1 b): Durch systematisches Probieren findet man heraus, wann aus 100 € mehr als 200 € werden.</div>
+  <div class="koop"><b>Forscherauftrag zu zweit:</b> Nutzt den Taschenrechner (<kbd>Ans</kbd> × Faktor, dann <kbd>=</kbd> zählen) oder die Animation oben.
+    <ol>
+      <li>Wie viele Jahre dauert es bei 2 %, 4 % und 6 %, bis sich ein Guthaben verdoppelt?</li>
+      <li><b>Hypothese prüfen:</b> „Bei doppelt so hohem Zinssatz dauert es halb so lange.“ Stimmt das ungefähr?</li>
+      <li>Spielt das Startkapital eine Rolle? Probiert 100 € und 1000 €.</li>
+    </ol></div>
+  <details class="loesung"><summary>Lösung</summary><div>2 %: nach 36 Jahren (35 Jahre reichen knapp nicht: 1,02<sup>35</sup> ≈ 1,9999). 4 %: nach 18 Jahren. 6 %: nach 12 Jahren. Die Hypothese stimmt ungefähr. Das Startkapital spielt <b>keine</b> Rolle – es kommt nur auf den Wachstumsfaktor an.</div></details>
+  <div class="aufgabe"><div class="kopf"><b>Faustregel prüfen</b><span class="niveau n3">Experte</span></div>
+    <p>Banker nutzen die „72er-Regel“: Verdopplungszeit ≈ 72 : Zinssatz (in %). Prüfe die Regel mit deinen Ergebnissen. Wie gut ist sie?</p>
+    <details class="loesung"><summary>Lösung</summary><div>72 : 2 = 36, 72 : 4 = 18, 72 : 6 = 12. Für kleine Zinssätze passt die Regel sehr gut. Sie ist eine Faustregel – also ein Überschlag, keine genaue Rechnung.</div></details>
+  </div>
+</section>
+
+<section class="box">
+  <p class="phase">Check-out</p>
+  <h2><span class="ico">🚪</span>Check-out</h2>
+  <p>1. Wachstumsfaktor bei 2,5 %: <span class="check" data-a="1,025" data-tol="0.00001" data-label="Wachstumsfaktor"></span></p>
+  <p>2. 2000 € zu 3 % für 4 Jahre: <span class="check" data-a="2251,02" data-tol="0.011" data-label="Kontostand 4 Jahre" data-unit="€"></span></p>
+  <p>3. Erkläre im Heft mit eigenen Worten, warum die Zinsen bei Zinseszinsen jedes Jahr größer werden.</p>
+</section>
+
+<nav class="reihe" aria-label="Weiter"><a href="6-zinsen.html">◀ 6 Zinsen</a><a href="8-wiederholung.html">8 Wiederholung ▶</a></nav>
+</main>
+<footer class="bottom">Unterrichtsreihe Prozentrechnung · Mathematik Jg. 7 · Kaiserin-Augusta-Schule Köln<br>
+Buchverweise: Lambacher Schweizer Mathematik 7 (Klett), Kapitel III „Prozentrechnung – Zinsrechnung“ ·
+<a href="../../impressum.html">Impressum</a> · <a href="../../datenschutz.html">Datenschutz</a></footer>
+</body>
+</html>
